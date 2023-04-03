@@ -1,0 +1,5 @@
+{
+    "require": {
+        "boxybird/morph": "^0.3.0"
+    }
+}
