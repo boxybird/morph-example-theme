@@ -10,7 +10,7 @@ This is meant to be an example of how [Morph](https://github.com/boxybird/morph)
 
 * `index.php` - The main template file. This is where the components are called and displayed on the front-end.
 
-* `components/counter-class.php` - An a example of a component using the `morph_render` helpers class.
+* `components/counter-class.php` - An a example of a component using the `morph_render` helper class.
 
 * `components/counter-procedural.php` - An a example of a component using procedural code.
 
