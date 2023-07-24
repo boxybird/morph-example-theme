@@ -5,7 +5,7 @@
 
     protected int $post_id;
 
-    public function mount()
+    public function __construct()
     {
         $this->post_id = get_the_ID();
 
