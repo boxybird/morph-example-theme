@@ -1,5 +1,7 @@
 {
     "require": {
-        "boxybird/morph": "^0.3.0"
+        "boxybird/morph": "^0.3.1",
+        "boxybird/waffle": "^0.2.11",
+        "michelf/php-markdown": "^2.0"
     }
 }

@@ -1,23 +1,21 @@
 ## WordPress Example Theme Using Morph
 
-![image](https://user-images.githubusercontent.com/18317878/229399041-196e5d6b-05a5-49d1-9855-b1fb78a5360f.png)
+This is meant to be an example of how [Morph](https://github.com/boxybird/morph) works within a theme rather than a fully functional theme. It is not meant to be used as a starter theme, but rather my playground to test out Morph and show others how it works.
 
-This is meant to be an example of how [Morph](https://github.com/boxybird/morph) works within a theme rather than a fully functional theme. It is not meant to be used as a starter theme, but rather as a reference for how to use Morph in your own theme.
+### Files and folders of note
 
-### Files of Note
+* `/functions.php` - Composer autoload and optional Morph component folder override ([See details](https://github.com/boxybird/morph#hooks)). As well as the ACF block registration using Morph's `morph_component` helper function.
 
-* `functions.php` - Composer autoload and optional Morph component folder override. [See details](https://github.com/boxybird/morph#hooks)
+* `/resources/components` - The folder containing all Morph components.
+    * `todos/index.php` - An example using the standard `$_POST` superglobal.
+    * `markdown/index.php` - An example using the `morph_render` helper function.
 
-* `index.php` - The main template file. This is where the components are called and displayed on the front-end.
+* `/page-*` - The page templates used to render the components. These are just examples. You can use WordPress template hierarchy you would like in your theme.
 
-* `components/counter-class.php` - An a example of a component using the `morph_render` helper class.
+### Demos
 
-* `components/counter-procedural.php` - An a example of a component using procedural code.
-
-### Installation
-
-Clone this repository into the WordPress themes directory and follow the instructions in the [Morph README](https://github.com/boxybird/morph).
-
+https://wp-morph.andrewrhyand.com/
 
 ### License
+
 [MIT license](https://opensource.org/licenses/MIT)

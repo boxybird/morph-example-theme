@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "settings": {
+    "color": {
+      "defaultPalette": false,
+      "custom": false,
+      "palette": [
+        {
+          "name": "Dark Blue",
+          "slug": "dark-blue",
+          "color": "#18202E"
+        },
+        {
+          "name": "Mustard",
+          "slug": "mustard",
+          "color": "#CB9821"
+        },
+        {
+          "name": "White",
+          "slug": "white",
+          "color": "#FFFFFF"
+        },
+        {
+          "name": "Shadow",
+          "slug": "shadow",
+          "color": "#60718D"
+        }
+      ]
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true,
+      "units": ["px", "em", "rem", "vh", "vw"]
+    }
+  }
+}

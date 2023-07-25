@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "tailwindcss": "^3.2.4"
+  },
+  "scripts": {
+    "tw:build": "npx tailwindcss -i ./resources/css/base.css -o ./dist/base.css && npx tailwindcss -i ./resources/css/app.css -o ./dist/app.css",
+    "tw:watch": "npx tailwindcss -i ./resources/css/app.css -o ./dist/app.css --watch"
+  }
+}
