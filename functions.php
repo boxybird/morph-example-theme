@@ -52,6 +52,11 @@ add_action('acf/init', function () {
 });
 
 /**
+ * Run Waffle queue worker in the background
+ */
+waffle_worker(['deploy_queue'])->work();
+
+/**
  * Enqueue scripts and styles for the frontend
  */
 add_action('wp_enqueue_scripts', function () {
