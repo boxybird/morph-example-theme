@@ -56,7 +56,7 @@
                     'menu_class'     => 'flex flex-col font-semibold items-center space-y-4',
                 ]); ?>
                 <div class="border-t border-zinc-800 mt-4 pt-4">
-                    <?php //morph_component('woocommerce.cart-mini'); ?>
+                    <?php morph_component('woocommerce.cart-mini'); ?>
                 </div>
             </div>
             <div
