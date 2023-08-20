@@ -68,34 +68,30 @@
 });
 ?>
 
-<style>
-    .wp-morph-transition {
-        transform: translateY(-0.1rem);
-        transition: all 680ms ease-in-out;
-    }
-
-    .wp-morph-transition-in {
-        transform: translateY(0);
-    }
-</style>
-
 <div 
-    class="grid grid-cols-1 h-full lg:grid-cols-[250px_1fr]"
-    x-data>
+    x-data="{
+        isLoading: false
+    }"
+    class="grid grid-cols-1 h-full lg:grid-cols-[250px_1fr]">
         <section class="bg-zinc-300 border-r border-zinc-400 h-full p-4">
             <h3 class="font-bold">Genres</h3>
             <div class="mt-4 space-y-2">
                 <?php foreach ($genres as $genre) : ?>
                     <button
                         class="bg-emerald-500 inline-block duration-150 px-3 py-1 tracking-widest uppercase disabled:opacity-75 disabled:pointer-events-none focus:outline-none focus:ring-4 focus:ring-emerald-600 hover:bg-emerald-600 lg:w-full"
-                        x-on:click="$wpMorph({ filterMovies: '<?= $genre['slug']; ?>' })">
+                        x-on:click="$wpMorph({ filterMovies: '<?= $genre['slug']; ?>' }, {
+                            onStart() { isLoading = true },
+                            onFinish() { isLoading = false }
+                        })">
                         <?= $genre['name']; ?>
                     </button>
                 <?php endforeach; ?>
             </div>
         </section>
         
-        <section class="auto-rows-max gap-4 grid grid-cols-2 p-4 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6">
+        <section 
+            :class="{ 'opacity-75 pointer-events-none': isLoading }"
+            class="auto-rows-max duration-300 gap-4 grid grid-cols-2 p-4 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6">
             <?php foreach ($movies as $movie) : ?>
                 <div
                     class="overflow-hidden relative"
@@ -103,9 +99,7 @@
                         contentHeight: 0,
                     }"
                     x-on:mouseover="$el.querySelector('img').style.transform = `translateY(-${contentHeight}px)`"
-                    x-on:mouseout="$el.querySelector('img').style.transform = 'translateY(0)'"
-                    key="<?= $movie['id']; ?>" 
-                    wp-morph-transition>
+                    x-on:mouseout="$el.querySelector('img').style.transform = 'translateY(0)'">
                     <img
                         class="aspect-[2/3] duration-[510ms] object-cover relative w-full z-10"
                         src="<?= $movie['image']; ?>">
