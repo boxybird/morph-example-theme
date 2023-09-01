@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "663e2cce4bf24f92ac15f20bb455a1c4",
+    "content-hash": "efb235efdd873043d61ad47c8a6e7674",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -157,16 +157,16 @@
         },
         {
             "name": "boxybird/morph",
-            "version": "v0.3.1",
+            "version": "v0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/boxybird/morph.git",
-                "reference": "5fdc13ab58ac5f6c9e0b1d1b1e3a933b83c653ea"
+                "reference": "657f71a2c5056e991c27adca6fc8fb579f3bb5b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/boxybird/morph/zipball/5fdc13ab58ac5f6c9e0b1d1b1e3a933b83c653ea",
-                "reference": "5fdc13ab58ac5f6c9e0b1d1b1e3a933b83c653ea",
+                "url": "https://api.github.com/repos/boxybird/morph/zipball/657f71a2c5056e991c27adca6fc8fb579f3bb5b7",
+                "reference": "657f71a2c5056e991c27adca6fc8fb579f3bb5b7",
                 "shasum": ""
             },
             "require": {
@@ -200,9 +200,9 @@
             ],
             "support": {
                 "issues": "https://github.com/boxybird/morph/issues",
-                "source": "https://github.com/boxybird/morph/tree/v0.3.1"
+                "source": "https://github.com/boxybird/morph/tree/v0.3.2"
             },
-            "time": "2023-07-20T01:22:56+00:00"
+            "time": "2023-09-01T01:49:21+00:00"
         },
         {
             "name": "boxybird/waffle",
