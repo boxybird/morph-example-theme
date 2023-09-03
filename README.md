@@ -10,7 +10,7 @@ This is meant to be an example of how [Morph](https://github.com/boxybird/morph)
     * `todos/index.php` - An example using the standard `$_POST` superglobal.
     * `markdown/index.php` - An example using the `morph_render` helper function.
 
-* `/page-*` - The page templates used to render the components. These are just examples. You can use WordPress template hierarchy you would like in your theme.
+* `/page-*` - The page templates used to render the components. These are just examples. In a real project, you'd most likely use a more traditional WordPress template hierarchy structure.
 
 ### Demos
 
