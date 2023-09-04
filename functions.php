@@ -70,7 +70,7 @@ add_action('wp_enqueue_scripts', function () {
 /**
  * Enqueue scripts and styles for the admin
  */
-add_action('admin_enqueue_scripts', function () {
+add_action('wp_enqueue_editor', function () {
     $version = filemtime(get_template_directory() . '/dist/app.css');
     
     wp_enqueue_style('admin-app', get_template_directory_uri() . '/dist/app.css', [], $version);
